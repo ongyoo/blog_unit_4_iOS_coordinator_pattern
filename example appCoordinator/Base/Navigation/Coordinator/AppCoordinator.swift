@@ -107,9 +107,9 @@ final class AppCoordinator: Coordinator {
     
     func goToDetail(param: String, isPresent: Bool) {
         let detailVC = DetailViewController.instantiate(on: .detail)
+        detailVC.router?.coordinator = self
         guard var destinationDS = detailVC.router?.dataStore else { return }
         passDataToDetail(param: param, destination: &destinationDS)
-        detailVC.router?.coordinator = self
         isPresent ? present(detailVC, animated: true) : pushViewController(detailVC, animated: true)
     }
     
