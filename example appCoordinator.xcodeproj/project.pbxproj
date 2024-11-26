@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		549EB5922CF60681001DA9F8 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549EB5912CF60681001DA9F8 /* URL+Extension.swift */; };
+		549EB5942CF606A2001DA9F8 /* AppCoordinator+Deeplink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549EB5932CF606A2001DA9F8 /* AppCoordinator+Deeplink.swift */; };
 		AFC5AFCF2CEED51A00385EC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5AFCE2CEED51A00385EC8 /* AppDelegate.swift */; };
 		AFC5AFD12CEED51A00385EC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5AFD02CEED51A00385EC8 /* SceneDelegate.swift */; };
 		AFC5AFD82CEED51B00385EC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC5AFD72CEED51B00385EC8 /* Assets.xcassets */; };
@@ -59,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		549EB5912CF60681001DA9F8 /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		549EB5932CF606A2001DA9F8 /* AppCoordinator+Deeplink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppCoordinator+Deeplink.swift"; sourceTree = "<group>"; };
 		AFC5AFCB2CEED51A00385EC8 /* example appCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "example appCoordinator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC5AFCE2CEED51A00385EC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFC5AFD02CEED51A00385EC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +126,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		549EB5902CF60661001DA9F8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				549EB5912CF60681001DA9F8 /* URL+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		AFC5AFC22CEED51A00385EC8 = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				AFC5B0202CEED57300385EC8 /* AppCoordinator.swift */,
+				549EB5932CF606A2001DA9F8 /* AppCoordinator+Deeplink.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -276,6 +289,7 @@
 		AFC5B0272CEED57300385EC8 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				549EB5902CF60661001DA9F8 /* Extension */,
 				AFC5B01F2CEED57300385EC8 /* DeepLink */,
 				AFC5B0222CEED57300385EC8 /* Navigation */,
 				AFC5B0252CEED57300385EC8 /* Storyboarded.swift */,
@@ -425,6 +439,7 @@
 				AFC5AFCF2CEED51A00385EC8 /* AppDelegate.swift in Sources */,
 				AFC5B02C2CEED57300385EC8 /* DetailRouter.swift in Sources */,
 				AFC5B02B2CEED57300385EC8 /* DetailPresenter.swift in Sources */,
+				549EB5922CF60681001DA9F8 /* URL+Extension.swift in Sources */,
 				AFC5B03A2CEED57300385EC8 /* SplashRouter.swift in Sources */,
 				AFC5B0372CEED57300385EC8 /* SplashInteractor.swift in Sources */,
 				AFC5B0412CEED57300385EC8 /* UseCaseProvider.swift in Sources */,
@@ -434,6 +449,7 @@
 				AFC5B0392CEED57300385EC8 /* SplashPresenter.swift in Sources */,
 				AFC5AFD12CEED51A00385EC8 /* SceneDelegate.swift in Sources */,
 				AFC5B03C2CEED57300385EC8 /* SplashWorker.swift in Sources */,
+				549EB5942CF606A2001DA9F8 /* AppCoordinator+Deeplink.swift in Sources */,
 				AFC5B03D2CEED57300385EC8 /* DeepLink.swift in Sources */,
 				AFC5B03B2CEED57300385EC8 /* SplashViewController.swift in Sources */,
 				AFC5B0382CEED57300385EC8 /* SplashModels.swift in Sources */,

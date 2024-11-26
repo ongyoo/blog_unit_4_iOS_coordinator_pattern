@@ -85,7 +85,7 @@ final class AppCoordinator: Coordinator {
     }
     
     override func start(with option: DeepLinkOption?) {
-        // Handle DeepLink Option
+        handleDeepLink(with: option)
     }
     
     private func goToSplash(id: String) {

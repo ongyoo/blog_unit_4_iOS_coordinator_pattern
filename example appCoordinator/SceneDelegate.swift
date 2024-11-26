@@ -62,11 +62,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
-        // Handle Deeplink
+        if let url = userActivity.webpageURL {
+            guard let deepLinkOption = DeepLinkManager.shared.resolve(url) else { return }
+            appCoordinator?.start(with: deepLinkOption)
+        }
     }
-
+    
     func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-        // Handle Resolve Deeplink
+        guard let url = URLContexts.first?.url else { return }
+        if let deepLinkOption = DeepLinkManager.shared.resolve(url) {
+            appCoordinator?.start(with: deepLinkOption)
+        }
     }
 
 }
